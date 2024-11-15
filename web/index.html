@@ -1,0 +1,177 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" />
+  <meta name="readthedocs-addons-api-version" content="1"><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RpiL Library Documentation &mdash; RpiL 0.2.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=938c9ccc"></script>
+      <script src="_static/doctools.js?v=9a2dae69"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <script src="_static/js/versions.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Installation" href="Installation.html" /> 
+<script async type="text/javascript" src="/_/static/javascript/readthedocs-addons.js"></script><meta name="readthedocs-project-slug" content="rpil" /><meta name="readthedocs-version-slug" content="latest" /><meta name="readthedocs-resolver-filename" content="/" /><meta name="readthedocs-http-status" content="200" /></head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="#" class="icon icon-home">
+            RpiL
+          </a>
+              <div class="switch-menus">
+                <div class="version-switch"></div>
+                <div class="language-switch"></div>
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Table of Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pin.html">How to Control a GPIO Pin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="PWM.html">How to Control a GPIO Pin with Pulse Width Modulation (PWM)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LED.html">How to Control an LED</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CPU-Temperature.html">How to Monitor CPU Temperature</a></li>
+<li class="toctree-l1"><a class="reference internal" href="buzzer.html">How to Control a Piezo Buzzer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IR.html">How to Control an Infrared (IR) Receiver and IR LED</a></li>
+<li class="toctree-l1"><a class="reference internal" href="motor.html">Controlling Motors with the motor Class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Motor-Driver.html">Motor Driver Control with the Motor_Driver Class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="PIR.html">PIR Motion Detection with the PIR Class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="RGB-LED.html">Controlling RGB LEDs with the RGB_LED Class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Temperature-Sensor.html">Using Temperature and Humidity Sensors (DHT11, DHT22, and AM2302)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="USDS.html">Using the Ultra-Sonic Distance Sensor (USDS)</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">RpiL</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">RpiL Library Documentation</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="rpil-library-documentation">
+<h1>RpiL Library Documentation<a class="headerlink" href="#rpil-library-documentation" title="Link to this heading"></a></h1>
+<p>Welcome to the RpiL library documentation! RpiL is a powerful Python library designed for controlling the GPIO pins on a Raspberry Pi. It also supports interaction with various circuit board devices, making it a versatile tool for electronics projects and hardware control.</p>
+<p>RpiL simplifies the process of working with hardware by providing easy-to-use functions for controlling pins, devices, and peripherals like LEDs, motors, sensors, and more. Whether you’re working on a Raspberry Pi project or exploring advanced control systems, RpiL provides all the tools you need to get started and build custom solutions.</p>
+<section id="contents">
+<h2>Contents<a class="headerlink" href="#contents" title="Link to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Table of Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Installation.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Installation.html#installing-on-non-raspberry-pi-systems">Installing on Non-Raspberry Pi Systems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Installation.html#installing-on-a-raspberry-pi">Installing on a Raspberry Pi</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pin.html">How to Control a GPIO Pin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="PWM.html">How to Control a GPIO Pin with Pulse Width Modulation (PWM)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LED.html">How to Control an LED</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CPU-Temperature.html">How to Monitor CPU Temperature</a></li>
+<li class="toctree-l1"><a class="reference internal" href="buzzer.html">How to Control a Piezo Buzzer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IR.html">How to Control an Infrared (IR) Receiver and IR LED</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="IR.html#ir-receiver">IR Receiver</a></li>
+<li class="toctree-l2"><a class="reference internal" href="IR.html#ir-led">IR LED</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="motor.html">Controlling Motors with the motor Class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Motor-Driver.html">Motor Driver Control with the Motor_Driver Class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="PIR.html">PIR Motion Detection with the PIR Class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="RGB-LED.html">Controlling RGB LEDs with the RGB_LED Class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Temperature-Sensor.html">Using Temperature and Humidity Sensors (DHT11, DHT22, and AM2302)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="USDS.html">Using the Ultra-Sonic Distance Sensor (USDS)</a></li>
+</ul>
+</div>
+</section>
+<section id="features">
+<h2>Features<a class="headerlink" href="#features" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><strong>GPIO Pin Control</strong>: Effortlessly manage and configure GPIO pins for a wide range of digital and analog tasks.</p></li>
+<li><p><strong>Device Control</strong>: Supports controlling a variety of circuit board devices like motors, sensors, LEDs, and buzzers.</p></li>
+<li><p><strong>PWM</strong>: Allows for the generation of Pulse Width Modulation signals for controlling devices like motors and LEDs.</p></li>
+<li><p><strong>Sensor Integration</strong>: Easily interface with various sensors, such as temperature, distance, and motion sensors.</p></li>
+<li><p><strong>Flexible and Easy-to-Use</strong>: Designed to make working with hardware on a Raspberry Pi simple, even for beginners.</p></li>
+</ul>
+</section>
+<section id="getting-started">
+<h2>Getting Started<a class="headerlink" href="#getting-started" title="Link to this heading"></a></h2>
+<p>Follow the installation guide to get started with RpiL, and explore the examples and features to control your Raspberry Pi and connected devices.</p>
+</section>
+<section id="external-links">
+<h2>External Links<a class="headerlink" href="#external-links" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><strong>GitHub Repository</strong>: <a class="reference external" href="https://github.com/TrynaThinkOf1/RpiL">https://github.com/TrynaThinkOf1/RpiL</a></p></li>
+<li><p><strong>PyPI Project Page</strong>: <a class="reference external" href="https://pypi.org/project/RpiL">https://pypi.org/project/RpiL</a></p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Installation.html" class="btn btn-neutral float-right" title="Installation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Zevi Berlin.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
